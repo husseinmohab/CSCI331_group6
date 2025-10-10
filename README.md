@@ -23,7 +23,7 @@ All submissions are organized by assignment. Each assignment has its own dedicat
 │   ├── notebook
 │   │   ├── name_1.ipynb
 │   │   └── (any_other_code_files)
-│   └── README.md
+│   └── README.md (links and plan)
 │
 ├── Homework_2
 │   ├── notebook
@@ -35,5 +35,6 @@ All submissions are organized by assignment. Each assignment has its own dedicat
 ```
 
 README.md files contain the links to our videos and our project plan for the respective assignment
+
 
 
