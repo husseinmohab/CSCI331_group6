@@ -9,6 +9,7 @@ This repository contains all the homework assignments and project submissions fo
 - **Ranjan Bhattarai**  
 - **Ilya Yahoshchankau**  
 - **Mohab Hussein**
+- **Gabriel Zamora**
 
 ---
 
@@ -34,4 +35,5 @@ All submissions are organized by assignment. Each assignment has its own dedicat
 ```
 
 README.md files contain the links to our videos and our project plan for the respective assignment
+
 
