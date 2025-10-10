@@ -16,6 +16,7 @@ This repository contains all the homework assignments and project submissions fo
 
 All submissions are organized by assignment. Each assignment has its own dedicated folder which follows a consistent structure:
 
+```
 .
 ├── Homework_1
 │   ├── notebook
@@ -30,5 +31,7 @@ All submissions are organized by assignment. Each assignment has its own dedicat
 │   └── README.md
 │
 └── (etc...)
+```
 
 README.md files contain the links to our videos and our project plan for the respective assignment
+
