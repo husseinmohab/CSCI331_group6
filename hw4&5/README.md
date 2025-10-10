@@ -4,6 +4,6 @@ MdIsmailHossain [Presentation video link here]() (unfourtunately this is an indi
 
 Ilya Yahoshchankau & Ranjan Bhattarai [Presentation video link here]()
 
-Mohab Hussein & Gabriel Zamora [Presentation video link here](https://youtu.be/TOQlgL4VKQ0)
+Mohab Hussein & Gabriel Zamora [Presentation video link here]()
 
 ## Project Plan:
