@@ -23,18 +23,20 @@ All submissions are organized by assignment. Each assignment has its own dedicat
 │   ├── notebook
 │   │   ├── name_1.ipynb
 │   │   └── (any_other_code_files)
-│   └── README.md (links and plan)
+│   ├── project_plan.xlsx (gantt chart for assignments after and including homework 6)
+│   └── README.md (contains video links and contains project plan for assignments prior to homeowork 6)
+│	
 │
 ├── Homework_2
 │   ├── notebook
 │   │   ├── name_2.ipynb
 │   │   └── (any_other_code_files)
+│   ├── project_plan.xlsx 
 │   └── README.md
 │
 └── (etc...)
 ```
 
-README.md files contain the links to our videos and our project plan for the respective assignment
 
 
 
