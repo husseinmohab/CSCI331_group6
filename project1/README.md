@@ -6,4 +6,4 @@ Mohab Hussein & Ilya Yahoshchankau [Presentation video link here](https://youtu.
 
 # Links to NACE competencies video:
 
-[Presentation video link here]()
+[Presentation video link here](https://youtu.be/bn1mpegcltw)
