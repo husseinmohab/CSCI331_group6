@@ -1,0 +1,17 @@
+create type PhoneNumber
+from varchar(20) not null;
+
+create type ZipCode
+from char(5) null;
+
+
+create table Employees (
+    EmplyeeID in primary key,
+    FulName varchar(100),
+    HomePhone PhoneNumber, 
+    WorkPhone PhoneNumber,  
+    PostCode ZipCode  
+);
+
+insert into Employees (EmployeeID, FullName, HomePhone, WorkPhone, PostalCode)
+values (1, 'Mohab Hussein', '555 555 5555', '555 555 5555', '0000');

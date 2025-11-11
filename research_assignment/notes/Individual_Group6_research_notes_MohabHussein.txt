@@ -1,0 +1,48 @@
+T-SQL CREATE TYPE  & ANSI CREATE DOMAIN
+
+Both used to create user defined data types (aliases)
+
+CREATE DOMAIN
+
+* ANSI standard for user defined types.
+* Bundles a base type (e.g., VARCHAR(10)) with constraints (CHECK, NOT NULL) and a DEFAULT value into one object. 
+
+CREATE DOMAIN US_POSTAL_CODE AS CHAR(5)
+CHECK (VALUE ~ '^[0-9]{5}$');
+
+CREATE TABLE Addresses (
+  ZipCode US_POSTAL_CODE NOT NULL -- Inherits type and CHECK
+);
+
+CREATE TYPE
+
+* T-SQL equivalent  
+CREATE TYPE SocialSecurityNumber FROM CHAR(11);
+
+
+User Defined Data Types (Domains)
+
+* Data Consistency
+    * Ensures data is stored identically (e.g. all EmailAddress columns share the same VARCHARlength and validation).
+    * Stops differing definitions for the same data (e.g., one dev uses VARCHAR(100), another NVARCHAR(255)).
+* Reusability
+    * Define complex types (e.g. PhoneNumber, SKU, CurrencyAmount) once.
+    * Developers use the PhoneNumber type without needing to look up or re-implement its logic.
+*  Governance
+    * Single point of truth, the type becomes the business definition for that data element.
+    * If a business rule changes (e.g. ProductID format expands), update the central type, not 50+ individual columns.
+    * More descriptive. ZipCode US_POSTAL_CODE is much clearer than ZipCode CHAR(5).
+
+Fully Qualified Table Names (FQTN)
+
+* [DatabaseName].[SchemaName].[TableName] (e.g., [ProdData].[Sales].[Orders])
+* Clarity & Unambiguity:
+    * Eliminates ambiguity. SELECT * FROM ProdData.Sales.Orders is explicit; SELECT * FROM Orders relies on the user's default database/schema context.
+    * Prevents scripts and stored procedures from breaking when run by different users or from different database contexts.
+* Referential Integrity & Joins:
+    * Guarantees JOIN operations connect to the correct tables, which is critical in complex schemas (e.g. Sales.Orders vs. Archive.Orders).
+    * FQTNs are mandatory when writing queries that join tables from different databases.
+* Scalability & Heterogeneous Environments:
+    * As an environment grows (reporting, staging, prod DBs), FQTNs are the only reliable way to target specific tables.
+    * Required for querying across different database systems via Linked Servers (e.g., [MyOracleLink].[Catalog].[Schema].[Table]).
+
